@@ -31,7 +31,8 @@ Copy the relevant file from `raw_data/` alongside the script and run with `pytho
 ## Project
 These Python scripts are generated for Rafflesia host-parasite metabolomics project lead by Dr. Jeanmaire Molina.
 Manuscript to cite (please cite once it's published):
-` Molina J, Azbalimov R, Yin P, Wicaksono A, Bernier F, Hill J, Burger M, Wen J, Pell S. 2026. Untargeted metabolomics reveals host responses and metabolites linked to host compatibility in Rafflesiaceae parasitism `
+
+Molina J, Azbalimov R, Yin P, Wicaksono A, Bernier F, Hill J, Burger M, Wen J, Pell S. 2026. Untargeted metabolomics reveals host responses and metabolites linked to host compatibility in Rafflesiaceae parasitism
 
 ## Declaration of AI usage
 The Python scripts were generated and checked by assistance of ChatGPT 5.2 and Claude Sonnet 5. All authors have checked, tested, and validated the scripts. 
