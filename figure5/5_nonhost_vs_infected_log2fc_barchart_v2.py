@@ -162,7 +162,7 @@ def main() -> None:
         Patch(facecolor="tab:orange", edgecolor="black", label="NonhostILO/infectedILO"),
         Patch(facecolor="white", edgecolor="black", hatch="//", label=f"FDR \u2265 {FDR_ALPHA:g} (not significant)"),
     ]
-    ax.legend(handles=legend_handles, frameon=False, loc="lower right", fontsize=9)
+    ax.legend(loc="upper left", bbox_to_anchor=(1.01, 1), frameon=False)
 
     note = (
         f"q-values: Benjamini\u2013Hochberg FDR across the full tested feature family "
