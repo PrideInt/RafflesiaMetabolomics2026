@@ -280,8 +280,8 @@ scores_df.to_csv(scores_out)
 loadings_df.to_csv(loadings_out)
 
 # --- 9) Save figure files ---
-figure_png = "PCA_3D_sample_groups_68CI_fig1orient.png"
-figure_svg = "PCA_3D_sample_groups_68CI_fig1orient.svg"
+figure_png = "PCA_3D_sample_groups.png"
+figure_svg = "PCA_3D_sample_groups.svg"
 
 fig.savefig(figure_png, dpi=300, bbox_inches="tight")
 fig.savefig(figure_svg, bbox_inches="tight")
