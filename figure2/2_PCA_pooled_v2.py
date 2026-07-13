@@ -269,8 +269,8 @@ else:
 plt.tight_layout()
 
 # --- 8) Export PCA scores & loadings ---
-scores_out = "PCA_scores_autoscaled_main-data_68CI_fig1orient.csv"
-loadings_out = "PCA_loadings_autoscaled_main-data_68CI_fig1orient.csv"
+scores_out = "PCA_scores_autoscaled_main-data.csv"
+loadings_out = "PCA_loadings_autoscaled_main-data.csv"
 
 scores_df = pd.DataFrame(scores, index=X.index, columns=["PC1", "PC2", "PC3"])
 scores_df["Group"] = groups
