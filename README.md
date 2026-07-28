@@ -84,9 +84,9 @@ Additionally, you can run every script at once by running the Bash script `run_s
 To do so:
 
 1. Run your terminal or console in the parent folder (folder where `run_scripts.bh` is located).
-2. (Linux) Run the command `./run_scripts.sh`.
-3. (Mac) Run the command `sh run_scripts.sh`.
-4. (Windows) Install an application to run Unix commands (such as Git Bash) and run the command `bash run_scripts.sh`.
+2. (Linux) Run the command `./run_scripts.bh`.
+3. (Mac) Run the command `sh run_scripts.bh`.
+4. (Windows) Install an application to run Unix commands (such as Git Bash) and run the command `bash run_scripts.bh`.
 
 ## Software requirements
 
