@@ -27,7 +27,7 @@ The package allows readers to inspect the input datasets, rerun the figure-gener
 ├── common.py            shared raw-data loading, name cleaning, group means
 ├── verify_figures.py    independent check of figure CSVs against raw data
 ├── statistics/          PERMANOVA on biological-sample means (results in permanova_results.txt)
-├── run_scripts.bh
+├── run_scripts.sh
 ├── LICENSE
 └── README.md
 ```
@@ -55,7 +55,7 @@ The package allows readers to inspect the input datasets, rerun the figure-gener
 - **Fig. 2:** no ellipsoid is drawn for the two-sample aerial stem/leaf group (it was not visible in the figure).
 - **Figs. 6–7 data correction:** group means are now computed directly from the individual runs in dataset1. The precomputed `aveuninfecraffspec-stemleaf` column (used via dataset4/dataset5 in earlier versions) did not equal the mean of its runs; this affected the stem/leaf bar in Fig. 6 and all Z-scores in Fig. 7. The heatmap metabolite list is in `raw_data/heatmap_metabolites.csv`; the earlier intermediate tables (datasets 2–5) are no longer used and have been removed.
 - **Name consolidation:** annotations differing only in capitalization or a ".mol" suffix (e.g., "EPICATECHIN"/"Epicatechin", "CITRIC ACID"/"Citric acid") are merged in all name-consolidated analyses (Figs. 4, 6, 7); the pooled Fig. 4 family is 606 metabolites.
-- **Verification:** `run_scripts.bh` ends by running `verify_figures.py`, which recomputes Figs. 4–7 values independently from dataset1 and checks that every metabolite meeting the Fig. 4 thresholds is labelled.
+- **Verification:** `run_scripts.sh` ends by running `verify_figures.py`, which recomputes Figs. 4–7 values independently from dataset1 and checks that every metabolite meeting the Fig. 4 thresholds is labelled.
 - **Fig. 6** ranks the 20 most abundant compounds across all annotated features in dataset1 (summed group means), excluding non-natural or unresolved annotations (`common.is_natural`); earlier versions ranked only a hand-curated subset (former dataset4) that omitted abundant natural products such as isovitexin and L-malic acid.
 - **Fig. 7:** exported at 600 dpi.
 - **Supplementary Figs. S1–S4:** PC1–PC3 and PC2–PC3 projections and scree plots for Figs. 1–3, and Fig. 1 recomputed without Ampelopsis and R. speciosa seeds.
@@ -71,7 +71,7 @@ cd figure4
 python3 4_infection_candidates_scatter_bio.py
 ```
 
-or run every script with `run_scripts.bh` from the repository root (Linux: `./run_scripts.bh`; Mac: `sh run_scripts.bh`; Windows: `bash run_scripts.bh` in Git Bash).
+or run every script with `run_scripts.sh` from the repository root (Linux: `./run_scripts.sh`; Mac: `sh run_scripts.sh`; Windows: `bash run_scripts.sh` in Git Bash).
 
 ## Software requirements
 
